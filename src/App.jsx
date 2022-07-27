@@ -4,22 +4,28 @@ import Questions from "./pages/Questions";
 import {
   BrowserRouter as Router,
   Route,
-  Link,
   Routes
 } from "react-router-dom";
+import { Box, Container } from "@mui/system";
 
 function App() {
   return (
     <div>
-      <h1>Hello</h1>
-     
-      <Router>
-        <Routes>
-          <Route path="/" element={<FirstPage />}></Route>
-          <Route path="/questions" element={<Questions />}></Route>
-          <Route path="/finalpage" element={<FinalPage />}></Route>
-        </Routes>
-      </Router>
+      
+      
+      <Container maxWidth="md">
+        <Box textAlign="center" mt={8}>
+        <Router>
+          <Routes>
+            <Route path="/" element={<FirstPage />}></Route>
+            <Route path="/questions" element={<Questions />}></Route>
+            <Route path="/finalpage" element={<FinalPage />}></Route>
+          </Routes>
+        </Router>
+        </Box>
+      
+      </Container>
+
 
     </div>
   );
