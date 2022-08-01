@@ -9,8 +9,6 @@ function SelectField(props) {
     const dispatch = useDispatch()
     const [value, setValue] = useState('')
 
-    // console.log(props.options)
-
     function changeHandler(e) {
         setValue(e.target.value)
         switch (props.label) {
@@ -36,7 +34,6 @@ function SelectField(props) {
                 </InputLabel>
                 <Select value={value} label={props.label} onChange={changeHandler}>
                     {props.options.map(item => (
-                        // console.log(item.name)
                         <MenuItem value={item.id} key={item.id}>{item.name}</MenuItem>
                     ))}
                 </Select>

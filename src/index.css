@@ -5,7 +5,7 @@ body {
 
 }
 
-.firstPage {
+.page--container {
     background: url(../public/assets/blob-blue.png) left 120% no-repeat, url(../public/assets/blob-yellow.png) right -15% no-repeat ;
     height: 100vh;
     display: flex;

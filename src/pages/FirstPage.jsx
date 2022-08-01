@@ -53,7 +53,7 @@ function FirstPage() {
   return (
     <div>
         <Typography variant="h2" fontWeight="bold" color="#293264">Trivia Quizzes</Typography>
-        <Typography variant="h6" fontWeight="bold" color="#293264" mb={10}>Play this quiz to challenge yourself!</Typography>
+        <Typography variant="body2" fontWeight="bold" color="#293264" mb={10}>Play this quiz to challenge yourself!</Typography>
         <form onSubmit={submitHandler}>
             <SelectField options={response.trivia_categories} label="Category"/>
             <SelectField options={difficultyOptions} label="Difficulty"/>

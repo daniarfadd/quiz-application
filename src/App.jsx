@@ -11,21 +11,18 @@ import './index.css'
 
 function App() {
   return (
-    <div className='firstPage'>
+    <div className='page--container'>
       <Container maxWidth="md">
         <Box textAlign="center" mt={8}>
-        <Router>
-          <Routes>
-            <Route path="/" element={<FirstPage/>}></Route>
-            <Route path="/questions" element={<Questions />}></Route>
-            <Route path="/finalpage" element={<FinalPage />}></Route>
-          </Routes>
-        </Router>
+          <Router>
+            <Routes>
+              <Route path="/" element={<FirstPage />}></Route>
+              <Route path="/questions" element={<Questions />}></Route>
+              <Route path="/finalpage" element={<FinalPage />}></Route>
+            </Routes>
+          </Router>
         </Box>
-      
       </Container>
-
-
     </div>
   );
 }
