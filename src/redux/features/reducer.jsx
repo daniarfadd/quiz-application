@@ -5,7 +5,7 @@ export const initialStateValue = {
     question_difficulty: "", 
     question_type: "",
     amount_of_question: 10,
-    score: 0
+    score: 0,
 }
 
 export const questionSlice = createSlice({

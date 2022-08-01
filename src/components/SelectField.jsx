@@ -30,7 +30,7 @@ function SelectField(props) {
 
     return (
         <Box mt={3} width="100%">
-            <FormControl size="small" fullWidth="true">
+            <FormControl size="small" fullWidth>
                 <InputLabel>
                     {props.label}
                 </InputLabel>

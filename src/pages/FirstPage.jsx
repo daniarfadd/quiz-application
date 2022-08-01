@@ -52,14 +52,15 @@ function FirstPage() {
 
   return (
     <div>
-        <Typography variant="h3" fontWeight="bold">Quiz Application</Typography>
+        <Typography variant="h2" fontWeight="bold" color="#293264">Trivia Quizzes</Typography>
+        <Typography variant="h6" fontWeight="bold" color="#293264" mb={10}>Play this quiz to challenge yourself!</Typography>
         <form onSubmit={submitHandler}>
             <SelectField options={response.trivia_categories} label="Category"/>
             <SelectField options={difficultyOptions} label="Difficulty"/>
             <SelectField options= {typeOptions} label="Type"/>
             <TextFieldCom />
             <Box mt={3} width="100%">
-                <Button fullWidth variant="contained" type="submit">
+                <Button fullWidth variant="contained" type="submit"  sx={{ color: 'yellow', backgroundColor: '#4D5B9E', borderColor: 'none' }}>
                     Lets Go
                 </Button>
             </Box>

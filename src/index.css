@@ -1,0 +1,12 @@
+body {
+    background-color: #F5F7FB;
+    margin: 0;
+    padding: 0;
+
+}
+
+.firstPage {
+    background: url(../public/assets/blob-blue.png) left 120% no-repeat, url(../public/assets/blob-yellow.png) right -15% no-repeat ;
+    height: 100vh;
+    display: flex;
+}
